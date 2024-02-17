@@ -1,5 +1,5 @@
-"X-Values","Y-Values","Y2-Values","Y3-Values"
-"Bob",45,56,33
-"Deb",33,22,24
-"Ann",38,37,54
-"John",42,44,18
+"X-Values","Y-Values","Y2-Values","Y3-Values","LineValue"
+"Bob",45,56,33,1028
+"Deb",33,22,24,1234
+"Ann",38,37,54,2034
+"John",42,44,18,924
