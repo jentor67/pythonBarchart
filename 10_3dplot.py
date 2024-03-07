@@ -8,27 +8,27 @@ from icecream import ic
 
 def main():
 
-    fig = plt.figure(figsize=(10,6))
+    fig = plt.figure(figsize=(10,8))
     ax = fig.add_subplot(111, projection='3d')
 
     # create number 0 - 5 step 1
-    start = .02
-    end = 1
-    step = .02
+    start = .1
+    end = 10
+    step = .1
     x = np.arange(start, end + step, step)
   
     # List of Battery ratings
-    equations = ['x', 'x^2', 'x^3', 'x^4', 'x^5']
+    equations = ['.1x^2','x^2-8x+10','.01x^3','-.25i^3+4x^2-15x+11','x']
  
     Y = np.empty((0,5))
 
     for i in x:
         line =[]
+        line.append(.1*i**2)
+        line.append(i**2 -8*i +10 )
+        line.append(.01*i**3)
+        line.append(-.25*i**3 + 4*i**2 - 15*i +11)
         line.append(i)
-        line.append(i**2)
-        line.append(i**3)
-        line.append(i**4)
-        line.append(i**5)
         Y = np.vstack((Y,np.array(line))) 
 
 
